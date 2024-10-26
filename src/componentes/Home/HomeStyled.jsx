@@ -1,12 +1,28 @@
 import styled from 'styled-components'
 
+const Main = styled.main`
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5rem 5rem;
+    }
+`
+
 const Header = styled.header`
     display: flex;
     justify-content: space-between;
-    padding: 2rem 10rem;
-    border-bottom: 0.1rem solid #666;
+    padding: 2rem 5rem;
+    border: 0.1rem solid #666;
+    border-radius: 0 0 1rem 1rem;
+    background-color: #000;
+    width: 90rem;
 
-    h2{
+    h2 a{
         font-size: 1.5rem;
         text-transform: uppercase;
         color: #fff;
@@ -15,30 +31,22 @@ const Header = styled.header`
 
 const Menu = styled.menu`
     display: flex;
-    gap: 2rem;
 
     li{
         height: 2rem;
         
         a{
-            font-size: 1.2rem;
+            font-size: 1.0rem;
             color: #fff;
-            padding: 2.7rem;
+            padding: 2.8rem 2.0rem;
             transition: 0.2s ease-in-out;
         }
 
         a:hover{
-            border-bottom: 0.1rem solid #fff;
-            color: #666;
+            border-bottom: 0.2rem solid #4caf50;
+            color: #4caf50;
         }
     }
-`
-
-const Main = styled.main`
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10rem 10rem;
 `
 
 const Info = styled.div`
@@ -60,6 +68,7 @@ const Info = styled.div`
     p{
         color: #fff;
         line-height: 1.5;
+        text-align: center;
     }
 `
 
@@ -70,4 +79,4 @@ const Img = styled.div`
     }
 `
 
-export { Header, Menu, Main, Info, Img }
+export { Main, Header, Menu, Info, Img }

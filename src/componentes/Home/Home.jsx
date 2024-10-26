@@ -1,21 +1,21 @@
-import { Header, Menu, Main, Info, Img } from './HomeStyled'
+import { Main, Header, Menu, Info, Img } from './HomeStyled'
 import FotoDePerfil from '../../images/foto-de-perfil.jpg'
 
 const Home = ()=>{
     return(
-        <>
+        <Main>
         <Header>
-            <h2>Luan Pablo</h2>
+            <h2><a href="#">Luan Pablo</a></h2>
             <nav>
                 <Menu>
                     <li>
                         <a href="#">Home</a>
                     </li>
                     <li>
-                        <a href="#">Portfólio</a>
+                        <a href="#">Projetos</a>
                     </li>
                     <li>
-                        <a href="">Trabalhos</a>
+                        <a href="">Técnologias</a>
                     </li>
                     <li>
                         <a href="">Contatos</a>
@@ -23,7 +23,7 @@ const Home = ()=>{
                 </Menu>
             </nav>
         </Header>
-        <Main>
+        <div>
             <Info>
                 <h1>Luan Pablo</h1>
                 <h2>Web Developer</h2>
@@ -32,8 +32,8 @@ const Home = ()=>{
             <Img>
                 <img src={FotoDePerfil} alt="foto-portfolio" />
             </Img>
+        </div>
         </Main>
-        </>
     )
 }
 
