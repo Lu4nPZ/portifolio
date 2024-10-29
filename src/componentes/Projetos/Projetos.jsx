@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import PropTypes from 'prop-types'
 import { MeusProjetos, ImgContainer, TextOverlay, ModalOverlay, ModalContent, ModalButton, CloseButton } from './ProjetosStyled'
 import ImgGTA6 from '../../images/GTA6.png'
 import ImgAppMarketplace from '../../images/app-marketplace.jpeg'
@@ -7,7 +8,7 @@ import ImgGitHub from '../../images/github.png'
 import ImgCarros from '../../images/carros.png'
 import ImgPokemon from '../../images/pokemon.png'
 
-const Projetos = ()=>{
+const Projetos = ({ id })=>{
     const [isModalOpen, setisModalOpen] = useState(false)
     const [pageLink, setPageLink] = useState('')
     const [repoLink, setRepoLink] = useState('')
@@ -23,7 +24,7 @@ const Projetos = ()=>{
     }
 
     return(
-        <MeusProjetos>
+        <MeusProjetos id={id}>
             <h1>Principais projetos</h1>
             <ul>
                 <li>
@@ -94,6 +95,10 @@ const Projetos = ()=>{
             }
         </MeusProjetos>
     )
+}
+
+Projetos.propTypes = {
+    id: PropTypes.string.isRequired,
 }
 
 export { Projetos }

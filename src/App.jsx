@@ -2,6 +2,7 @@
 import { Home } from './componentes/Home/Home'
 import { createGlobalStyle } from 'styled-components'
 import { Projetos } from './componentes/Projetos/Projetos'
+import { Tecnologias } from './componentes/Tecnologias/Tecnologias'
 
 const GlobalStyle = createGlobalStyle`
   html{
@@ -30,8 +31,9 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <Home />
-      <Projetos />
+      <Home id='home'/>
+      <Projetos id='projetos'/>
+      <Tecnologias id='tecnologias'/>
     </>
   )
 }

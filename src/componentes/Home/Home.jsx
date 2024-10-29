@@ -1,21 +1,22 @@
 import { Main, Header, Menu, Info, Img } from './HomeStyled'
 import FotoDePerfil from '../../images/foto-de-perfil.jpg'
+import PropTypes from 'prop-types'
 
-const Home = ()=>{
+const Home = ({ id })=>{
     return(
-        <Main>
+        <Main id={id}>
         <Header>
             <h2><a href="#">Luan Pablo</a></h2>
             <nav>
                 <Menu>
                     <li>
-                        <a href="#">Home</a>
+                        <a href="#home">Home</a>
                     </li>
                     <li>
-                        <a href="#">Projetos</a>
+                        <a href="#projetos">Projetos</a>
                     </li>
                     <li>
-                        <a href="">Técnologias</a>
+                        <a href="#tecnologias">Tecnologias</a>
                     </li>
                     <li>
                         <a href="">Contatos</a>
@@ -35,6 +36,10 @@ const Home = ()=>{
         </div>
         </Main>
     )
+}
+
+Home.propTypes = {
+    id: PropTypes.string.isRequired
 }
 
 export { Home }

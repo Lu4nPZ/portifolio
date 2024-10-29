@@ -10,6 +10,7 @@ const MeusProjetos = styled.div`
     h1{
         color: #fff;
         margin-bottom: 3rem;
+        font-size: 2rem;
     }
 
     ul{
@@ -26,6 +27,7 @@ const ImgContainer = styled.div`
     height: 37.5rem;
     overflow: hidden;
     position: relative;
+    border-radius: 0.8rem;
 
     img{
         transition: transform 0.3s ease;
