@@ -5,6 +5,7 @@ const Section = styled.section`
     align-items: center;
     flex-direction: column;
     gap: 1rem;
+    margin-bottom: 2rem;
 
     h1{
         color: #fff;
@@ -15,6 +16,13 @@ const Section = styled.section`
         color: #fff;
         font-size: 1.3rem;
         margin-bottom: 3rem;
+    }
+
+    a{
+        padding: 1rem;
+        border-radius: 0.5rem;
+        background-color: #fff;
+        color: #000;
     }
 `
 

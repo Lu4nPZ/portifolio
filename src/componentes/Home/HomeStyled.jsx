@@ -79,4 +79,27 @@ const Img = styled.div`
     }
 `
 
-export { Main, Header, Menu, Info, Img }
+const Redes = styled.ul`
+    display: flex;
+    gap: 1rem;
+`
+
+const Itens = styled.a`
+    display: flex;
+    align-items: center;
+    color: #4caf50;
+    font-size: 1.3rem;
+
+    p{
+        color: #fff;
+        font-size: 1rem;
+        margin-left: 0.2rem;
+        transition: 0.2s ease-in-out;
+    }
+
+    p:hover{
+        color: #4caf50; 
+    }
+`
+
+export { Main, Header, Menu, Info, Img, Redes, Itens }
